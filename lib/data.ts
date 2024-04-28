@@ -39,6 +39,7 @@ export const links = [
 
 export const experiencesData = [
   {
+    id: 1,
     title: "Graduated bootcamp",
     location: "Miami, FL",
     description:
@@ -47,6 +48,7 @@ export const experiencesData = [
     date: "2019",
   },
   {
+    id: 2,
     title: "Front-End Developer",
     location: "Orlando, FL",
     description:
@@ -55,6 +57,7 @@ export const experiencesData = [
     date: "2019 - 2021",
   },
   {
+    id: 3,
     title: "Full-Stack Developer",
     location: "Houston, TX",
     description:
@@ -123,15 +126,15 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
   "Redux",
+  "Node.js",
+  "Tailwind",
+  "Styled Components",
+  "Git",
+  "PHP",
+  "MySQL",
+  "MongoDB",
   "GraphQL",
-  "Apollo",
-  "Express",
   "PostgreSQL",
   "Python",
   "Django",
