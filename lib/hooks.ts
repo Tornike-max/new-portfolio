@@ -18,5 +18,5 @@ export const useSectionInView = (
     }
   }, [activeSectionName, inView, setActiveSection, timeOfLastClick]);
 
-  return { ref };
+  return { ref, inView };
 };
