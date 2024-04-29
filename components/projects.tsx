@@ -12,7 +12,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="scroll-mt-28 z-50">
-      <div ref={ref} className="w-full flex justify-center items-center mb-4">
+      <div ref={ref} className="w-full flex justify-center items-center mb-10">
         <SectionHeading>Projects</SectionHeading>
       </div>
       <div>

@@ -18,7 +18,9 @@ const About = () => {
       className=" max-w-[45rem] text-center leading-8 scroll-mt-28"
       id="about"
     >
-      <SectionHeading>About Me</SectionHeading>
+      <div className="w-full flex justify-center items-center mb-10">
+        <SectionHeading>About Me</SectionHeading>
+      </div>
       <motion.p
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl flex items-center justify-center"
         initial={{ opacity: 0, y: 100 }}

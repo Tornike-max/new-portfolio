@@ -84,20 +84,20 @@ const Intro = () => {
         <a
           href="/Tornike ozbetelashvili.pdf"
           download={true}
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full cursor-pointer hover:scale-105 duration-150 transition-all hover:bg-slate-100"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full cursor-pointer hover:scale-105 duration-150 transition-all hover:bg-slate-100 dark:bg-white/10"
         >
           Download CV{" "}
           <HiDownload className="group-hover:translate-y-1 transition" />
         </a>
         <a
           href="https://www.linkedin.com/in/tornike-ozbetelashvili-1732b2205/"
-          className="bg-white p-4 flex items-center gap-2 rounded-full cursor-pointer hover:scale-105 duration-150 transition-all  hover:bg-slate-100"
+          className="bg-white p-4 flex items-center gap-2 rounded-full cursor-pointer hover:scale-105 duration-150 transition-all  hover:bg-slate-100 dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/Tornike-max"
-          className="bg-white p-4 flex items-center gap-2 rounded-full cursor-pointer hover:scale-105 duration-150 transition-all  hover:bg-slate-100"
+          className="bg-white p-4 flex items-center gap-2 rounded-full cursor-pointer hover:scale-105 duration-150 transition-all  hover:bg-slate-100 dark:bg-white/10 dark:text-white/60"
         >
           <BsGithub />
         </a>

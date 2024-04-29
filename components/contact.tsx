@@ -42,7 +42,7 @@ const Contact = () => {
         <SectionHeading>Contact me</SectionHeading>
       </div>
 
-      <p className="text-gray-700">
+      <p className="text-gray-700 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:ozbetelashvilitornike2@gmail.com">
           ozbetelashvilitornike2@gmail.com{" "}
@@ -50,17 +50,20 @@ const Contact = () => {
         or through this form.
       </p>
 
-      <form className="mt-10 flex flex-col gap-2" action={handleSendEmail}>
+      <form
+        className="mt-10 flex flex-col gap-2 dark:text-black/80"
+        action={handleSendEmail}
+      >
         <input
           type="email"
-          className="h-14 w-full rounded-lg borderBlack p-4"
+          className="h-14 w-full rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your email"
           name="senderEmail"
           maxLength={500}
           required
         />
         <textarea
-          className="h-52 w-full my-3 rounded-lg borderBlack p-4"
+          className="h-52 w-full my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your message"
           name="message"
           maxLength={5000}

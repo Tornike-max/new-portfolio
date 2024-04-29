@@ -27,7 +27,7 @@ const Skills = () => {
       ref={ref}
       className="mb-20 max-w-[56rem] scroll-mt-28 text-center "
     >
-      <div className="w-full flex justify-center items-center mb-4">
+      <div className="w-full flex justify-center items-center my-10">
         <SectionHeading>My Skills</SectionHeading>
       </div>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
@@ -40,7 +40,7 @@ const Skills = () => {
               once: true,
             }}
             custom={index}
-            className="bg-white border border-black/[0.1] rounded-xl px-5 py-3"
+            className="bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={skill}
           >
             {skill}

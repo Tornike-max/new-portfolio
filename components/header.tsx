@@ -16,7 +16,7 @@ const Header = () => {
       <motion.div
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
-        className="fixed top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rouned-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
+        className="fixed top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rouned-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
       ></motion.div>
       <nav className=" flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
@@ -29,9 +29,10 @@ const Header = () => {
             >
               <Link
                 className={clsx(
-                  "flex w-full items-center justify-center  p-3 hover:text-gray-950 transition",
+                  "flex w-full items-center justify-center  p-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
                   {
-                    "text-gray-950 ": link.name === activeSection,
+                    "text-gray-950 dark:text-gray-200":
+                      link.name === activeSection,
                   }
                 )}
                 href={link.hash}
@@ -49,7 +50,7 @@ const Header = () => {
                       stiffness: 380,
                       damping: 30,
                     }}
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10"
+                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
                   ></motion.span>
                 )}
               </Link>
