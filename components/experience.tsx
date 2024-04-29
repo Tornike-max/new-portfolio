@@ -26,9 +26,10 @@ const Experience = () => {
       ref={ref}
       className="mb-20 max-w-[56rem] scroll-mt-28 text-center "
     >
-      <div className="w-full flex justify-center items-center mb-4">
-        <SectionHeading>Experience</SectionHeading>
+      <div className="w-full flex justify-center items-center mb-10">
+        <SectionHeading>My Experience</SectionHeading>
       </div>
+
       <VerticalTimeline lineColor="">
         {experiencesData.map((item) => (
           <React.Fragment key={item.id}>

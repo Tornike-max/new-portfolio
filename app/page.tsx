@@ -1,5 +1,6 @@
 import Intro from "@/components/Intro";
 import About from "@/components/about";
+import Contact from "@/components/contact";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
@@ -18,6 +19,8 @@ const Home = () => {
       <Skills />
       <SectionDivider />
       <Experience />
+      <SectionDivider />
+      <Contact />
     </main>
   );
 };
