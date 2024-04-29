@@ -4,8 +4,9 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import imaginify from "@/public/imaginify.png";
 import wildOasis from "@/public/wildOasis.png";
-import zoomClone from "@/public/zoom-clone.png";
+import zoomClone from "@/public/zoomclone.png";
 import dashboard from "@/public/dashboard.png";
+import photoapp from "@/public/photoapp.png";
 import instagramClone from "@/public/instagramClone.png";
 import graph from "@/public/graph.png";
 import ozBank from "@/public/ozBank.png";
@@ -40,30 +41,39 @@ export const links = [
 export const experiencesData = [
   {
     id: 1,
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Academy Of Digital Industries",
+    location: "Tbilisi, Georgia",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated from the academy, where I learned HTML, CSS, JavaScript and React.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2022",
   },
   {
     id: 2,
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Digital Institute",
+    location: "Tbilisi, Georgia",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as a Teaching Assistant at a digital institute, Where i guided novice developers through assignments, ensuring their understanding and providing constructive feedback. ",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2023",
   },
   {
     id: 3,
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "The Ultimate React Course 2024: React, Redux & More",
+    location: "...",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I took the React course on Udemy, from which I gained quite solid knowledge. I learned Redux, Tailwind, Styled Components and more.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023",
+  },
+  {
+    id: 4,
+    title: "Skillwill",
+    location: "Tbilisi, Georgia",
+    description:
+      "I took a course in Skillville where I learned Python, Django and SQL. During the course, we worked on a real project.",
+    icon: React.createElement(FaReact),
+    date: "2024",
   },
 ] as const;
 
@@ -71,16 +81,23 @@ export const projectsData = [
   {
     title: "Imaginify",
     description:
-      "Integrating Next.js, Clerk, Stream, and Tailwind CSS enables the creation of a Zoom clone application, offering modern web functionalities such as advanced user authentication, real-time chat, and responsive UI design.",
-    tags: ["React", "Next.js", "Clerk", "Stream", "Tailwind Css"],
+      "Introducing a dynamic web application built using Next.js 14, Tailwind CSS, Shadcn UI, Cloudinary AI, Clerk, Stripe, and MongoDB. This innovative platform empowers users to effortlessly edit images, remove backgrounds or objects, and obtain custom-sized images like 3:4 or 9:16 aspect ratios, all in one seamless interface.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Mongo DB", "Clerk"],
     imageUrl: imaginify,
   },
   {
-    title: "Wild Oasis",
+    title: "Zoom Clone",
     description:
-      "Introducing a dynamic web application built using Next.js 14, Tailwind CSS, Shadcn UI, Cloudinary AI, Clerk, Stripe, and MongoDB. This innovative platform empowers users to effortlessly edit images, remove backgrounds or objects, and obtain custom-sized images like 3:4 or 9:16 aspect ratios, all in one seamless interface.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Mongo DB", "Clerk"],
-    imageUrl: wildOasis,
+      "Integrating Next.js, Clerk, Stream, and Tailwind CSS enables the creation of a Zoom clone application, offering modern web functionalities such as advanced user authentication, real-time chat, and responsive UI design.",
+    tags: ["React", "Next.js", "Clerk", "Stream", "Tailwind Css"],
+    imageUrl: zoomClone,
+  },
+  {
+    title: "Photo app",
+    description:
+      "Explore and manipulate stunning images with this React-based photo app powered by the Unsplash API. Search for a wide range of images and perform various actions with ease, all enhanced by React Query for seamless data fetching. Tailwind CSS ensures a sleek and responsive user interface, making image discovery and interaction a delightful experience.",
+    tags: ["React", "TypeScript", "React Query", "Tailwind"],
+    imageUrl: photoapp,
   },
   {
     title: "Oz-Bank",
