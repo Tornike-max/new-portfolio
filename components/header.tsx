@@ -4,7 +4,6 @@ import React, { useContext, useState } from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
-import clsx from "clsx";
 import { useActiveSection } from "@/context/active-section-context";
 
 const Header = () => {
@@ -28,13 +27,10 @@ const Header = () => {
               key={i}
             >
               <Link
-                className={clsx(
-                  "flex w-full items-center justify-center  p-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
-                  {
-                    "text-gray-950 dark:text-gray-200":
-                      link.name === activeSection,
-                  }
-                )}
+                className={`flex w-full items-center justify-center  p-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300 ${
+                  link.name === activeSection &&
+                  "text-gray-950 dark:text-gray-100"
+                }`}
                 href={link.hash}
                 onClick={() => {
                   setActiveSection(link.name);
